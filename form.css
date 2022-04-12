@@ -1,0 +1,112 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #3A3845;
+}
+.header{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+nav{
+    margin:10px 30px 10px 30px;
+    border-radius: 20px;
+    display: flex;
+    line-height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: #FF6363;
+    width: 95%;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    color:gray;
+}
+.search-box{
+    position: absolute;
+    top:50%;
+    left:91%;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 20px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-txt{
+    border: none;
+    background: none;
+    float: left;
+    outline: none;
+    padding:0;
+    color:white;
+    font-size: 12px;
+    transition: 0.4s;
+    line-height: 20px;
+    width: 100px;
+}
+.search-icon{
+    position: absolute;
+    left: 97%;
+    top: 4px;
+    height: 20px;
+    width: 20px;
+    font-size: 22px;
+    color: black;
+    cursor:pointer;
+}
+
+.booking{
+    padding: 1em;
+    margin:3em auto;
+    width: 50%;
+    background:#FF6363;
+    box-shadow: 0 20px 40px rgba(0, 0, 0,2);
+    list-style: none;
+    font-size: 20px;
+    line-height: 80px;
+}
+.booking input{
+  padding: 8px 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.submit{
+    background:black;
+    color: #3A3845;
+    padding: 0 0 0 0;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.submit:hover{
+    margin-top: 5px;
+    cursor: pointer;
+    background: gray;
+}
