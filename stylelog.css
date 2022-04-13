@@ -92,12 +92,12 @@ nav ul li a:hover{
   border: none;
   border-bottom: 2px solid black;
 }
-.button{
+button{
     background:#fff;
     color: black;
     border: 0;
     cursor:pointer;
-    margin-top: 10px;
+    margin-top: 17px;
     border-radius: 5px;
     text-align: center;
 }

@@ -1,3 +1,24 @@
+<?php
+require 'koneksi.php';
+if(isset($_POST["login"]) ){
+    //cek data 
+    if(tambah($_POST)>0){
+      echo "
+      <script>
+        alert('data berhasil ditambahkan');
+        document.location.href = 'home.html';
+      </script>
+      ";
+    }else{
+      echo "
+      <script>
+        alert('data gagal ditambahkan');
+      </script>
+      ";
+    }
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,10 +51,10 @@
        <h1>Login Here</h1>
        <form action="" method="post">
         <table>
-            <tr><td>Username</td><td><input type="email" name="username" placeholder="username" id="username"></td></tr>
-            <tr><td>Password</td><td><input type="password" name="password" placeholder="password" id="password"></td></tr>
+            <tr><td>Username</td><td><input type="email" name="username" placeholder="username" id="username" required></td></tr>
+            <tr><td>Password</td><td><input type="password" name="password" placeholder="password" id="password" required></td></tr>
         </table>
-        <p class="button"><input type="submit" name="input" value="SUBMIT" align="right" style="font-size: 20px; list-style: none; border: none; color: black; cursor: pointer;"></p>
+        <button type="submit" name="login" style="font-size: 25px">Login</button>
     </form>
 </div>
    </div>

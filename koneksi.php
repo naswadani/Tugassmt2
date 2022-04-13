@@ -1,12 +1,26 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
+$database = mysqli_connect("localhost","root","","submit");
 
-$conn = new mysqli($servername, $username, $password);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-  echo "Connected successfully";
-  ?>
+function query($query){
+    global $database;
+    $result = mysqli_query($database, $query);
+    $rows = [];
+    while($row = mysqli_fetch_assoc($result)){
+      $rows[] = $row;
+    }
+    return $rows;
+}
+
+function tambah($data){
+  global $database; 
+  $username = htmlspecialchars($data["username"]);
+  $password = htmlspecialchars($data["password"]);
+
+  $query = "INSERT INTO tblogin
+              VALUES
+              ('','$username','$password')";
+    mysqli_query($database,$query);
+    return mysqli_affected_rows($database);
+}
+
 ?>
