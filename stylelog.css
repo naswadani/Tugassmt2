@@ -7,7 +7,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #3A3845;
+    background-color: #F7F7F7;
 }
 .header{
     width: 1100px;
@@ -21,7 +21,7 @@ nav{
     line-height: 50px;
     position: sticky;
     position: -webkit-sticky;
-    background-color: #FF6363;
+    background-color: #86C6F4;
     width: 95%;
 }
 nav ul{
@@ -49,7 +49,7 @@ nav ul li a:hover{
     padding: 1em;
     margin:6em auto;
     width: 18em;
-    background:#FF6363;
+    background:#86C6F4;
     border-radius: 10px;
 }
 .login-box input{
@@ -70,7 +70,7 @@ button{
 }
 
 .footer{
-    background-color: #FF6363;
+    background-color: #86C6F4;
     padding: 70px 0px;
     line-height: 1.2;
   }

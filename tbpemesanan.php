@@ -9,25 +9,27 @@ if (!isset($_POST["nama"])){
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mencoba</title>
+	<title>Tabel login</title>
 	<style>
 		h2{
-			color : white;
+			color : #24262b;
 		}
 		body{
 			margin: 7em;
     		padding: 0px;
-    		background-color: #3A3845;
+    		background-color: #F7F7F7;
 		}
 		button{
 			margin-top : 20px;
 			overflow: hidden;
 			list-style-type: none;
-			background-color:black;
+			background-color:#86C6F4;
+			border : none;
+			border-radius:5px;
 		}
 		button a{
 			text-decoration: none;
-			color : white;
+			color : #24262b;
 			font-size:20px;
 		}
 	</style>
@@ -35,7 +37,7 @@ if (!isset($_POST["nama"])){
 <body>
 	<h2>Tabel Pemesanan</h2>
 	<table border="1" cellpadding="20" cellspacing="0">
-		<tr style="background-color: #FF6363;">
+		<tr style="background-color: #86C6F4;">
 			<th>nama</th>
 			<th>pesanan</th>
             <th>no telepon</th>

@@ -7,7 +7,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #3A3845;
+    background-color: #F7F7F7;
 }
 .header{
     width: 1100px;
@@ -21,7 +21,7 @@ nav{
     line-height: 50px;
     position: sticky;
     position: -webkit-sticky;
-    background-color: #FF6363 ;
+    background-color: #86C6F4 ;
     width: 95%;
 }
 nav ul{
@@ -60,15 +60,15 @@ nav ul li a:hover{
 .contents-left h1{
     font-size: 50px;
     font-family: 'Playfair Display', serif;
-    color: #fff;
+    color: #24262b;
 }
 .contents-left p{
     font-family: sans-serif;
     line-height: 2em;
-    color: #fff;
+    color: #24262b;
 }
 .contents-left a{
-    background: #FF6363;
+    background: #86C6F4;
     color: #24262b;
     border-radius: 5px;
     padding: 10px;
@@ -95,7 +95,7 @@ nav ul li a:hover{
 .features{
   margin-top:700px;
   height: 12em;
-  background-color: #c4a795;
+  background-color: #2f3640;
 }
 .feature {
   float:left;
@@ -104,10 +104,10 @@ nav ul li a:hover{
 }
 .feature a{
   cursor: pointer;
-  color: #2f3640;
+  color: #86C6F4;
 }
 .feature a:hover{
-  color: #FFAB76;
+  color: white;
 }
 #popup:target{
   opacity: 1;

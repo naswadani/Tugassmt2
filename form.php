@@ -14,7 +14,7 @@
            <div class="logo"></div>
            <div class="menu">
                <ul>
-                    <li><a href="home.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="#">Pemesanan</a></li>
                     <li style="float:right;"><a href="tblogin.php">Database Login</a></li>
                </ul>
@@ -35,7 +35,7 @@
                 <option value="Bayar Ditempat">Bayar Ditempat</optione>
             </select></td></tr>  
         </table>
-        <button type="submit" name="input" value="Pesan" style="font-size: 40px; text-decoration: none; border: none; cursor: pointer;">Pesan</button>
+        <button type="submit" name="input" value="Pesan">Pesan</button>
     </form>      
    </div>
 </body>

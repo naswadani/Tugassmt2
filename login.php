@@ -6,7 +6,7 @@ if(isset($_POST["login"]) ){
       echo "
       <script>
         alert('data berhasil ditambahkan');
-        document.location.href = 'home.php';
+        document.location.href = 'index.php';
       </script>
       ";
     }else{

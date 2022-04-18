@@ -7,7 +7,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #3A3845;
+    background-color: #F7F7F7;
 }
 .header{
     width: 1100px;
@@ -21,7 +21,7 @@ nav{
     line-height: 50px;
     position: sticky;
     position: -webkit-sticky;
-    background-color: #FF6363;
+    background-color: #86C6F4;
     width: 95%;
 }
 nav ul{
@@ -45,43 +45,12 @@ nav ul li a{
 nav ul li a:hover{
     color:gray;
 }
-.search-box{
-    position: absolute;
-    top:50%;
-    left:91%;
-    transform: translate(-50%,-50%);
-    background: #2f3640;
-    height: 20px;
-    border-radius: 40px;
-    padding: 10px;
-}
-.search-txt{
-    border: none;
-    background: none;
-    float: left;
-    outline: none;
-    padding:0;
-    color:white;
-    font-size: 12px;
-    transition: 0.4s;
-    line-height: 20px;
-    width: 100px;
-}
-.search-icon{
-    position: absolute;
-    left: 97%;
-    top: 4px;
-    height: 20px;
-    width: 20px;
-    font-size: 22px;
-    color: black;
-    cursor:pointer;
-}
+
 .booking{
     padding: 1em;
     margin:3em auto;
     width: 50%;
-    background:#FF6363;
+    background:#86C6F4;
     box-shadow: 0 20px 40px rgba(0, 0, 0,2);
     list-style: none;
     font-size: 20px;
@@ -90,21 +59,23 @@ nav ul li a:hover{
 .booking input{
   padding: 8px 10px;
   background-color: transparent;
-  color: #fff;
+  color: #24262b;
   border: none;
   border-bottom: 2px solid black;
 }
-.submit{
-    background:black;
-    color: #3A3845;
+button{
+    background:#24262b;
+    color: white;
     padding: 0 0 0 0;
     margin-top: 10px;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
     border-radius: 10px;
+    border: none;
+    font-size: 35px;
 }
-.submit:hover{
+button:hover{
     margin-top: 5px;
     cursor: pointer;
     background: gray;

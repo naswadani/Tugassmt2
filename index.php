@@ -14,7 +14,7 @@
             <div class="logo"></div>
             <div class="menu">
                 <ul>
-                     <li><a href="home.php">Home</a></li>
+                     <li><a href="index.php">Home</a></li>
                      <li><a href="form.php">Pemesanan</a></li>
                      <li style="float:right;"><a href="tblogin.php">Database Login</a></li>
                 </ul>  
@@ -37,22 +37,22 @@
       <div class="wrapper">
         <div class="feature">
          <a href="form.php" class="fa-solid fa-wrench fa-7x"></a>
-            <center><h2 style="font-size: 20px;">Elektronik</h2></center>
+            <center><h2 style="font-size: 20px; color:#86C6F4;">Elektronik</h2></center>
           </i>
         </div>
         <div class="feature">
         <a href="form.php" class="fa-solid fa-car fa-7x"></a>
-            <center><h2 style="font-size: 20px;">Mobil</h2></center>
+            <center><h2 style="font-size: 20px; color:#86C6F4;">Mobil</h2></center>
           </i>
         </div>
         <div class="feature">
         <a href="form.php" class="fa-solid fa-motorcycle fa-7x"></a>
-            <center><h2 style="font-size: 20px;">Motor</h2></center>
+            <center><h2 style="font-size: 20px; color:#86C6F4;">Motor</h2></center>
           </i>
         </div>
         <div class="feature">
         <a href="form.php" class="fa-solid fa-hammer fa-7x"></a>
-            <center><h2 style="font-size: 20px;">Rumah</h2></center>
+            <center><h2 style="font-size: 20px; color:#86C6F4;">Rumah</h2></center>
           </i>
         </div>
       </div>
@@ -77,6 +77,6 @@
             <center><a href="form.php" class="popup_btn">BOOK NOW</a></center>  
       </div>
     </div>
-    <i style="color:white;">@Bengkelno2022-Naswa Bryna Danikhansa</i>
+    <i style="color:#2f3640;">@Bengkelno2022-Naswa Bryna Danikhansa</i>
 </body>
 </html>
