@@ -14,16 +14,10 @@
             <div class="logo"></div>
             <div class="menu">
                 <ul>
-                     <li><a href="home.html">Home</a></li>
-                     <li><a href="#">Pemesanan</a></li>
-                </ul>
-                <div class="search-box">
-                    <input class="search-txt" type="search" name="" placeholder="Search" >
-                </div>
-                <a class="search-icon" href="#">
-                 <i class="fas fa-search"></i>
-                </a>
-            </div>
+                     <li><a href="home.php">Home</a></li>
+                     <li><a href="form.php">Pemesanan</a></li>
+                     <li style="float:right;"><a href="tblogin.php">Database Login</a></li>
+                </ul>  
         </div>
     </nav>
     <div class="wrapper">
@@ -35,29 +29,29 @@
                 <a href="#popup">YUK ORDER</a>
             </div>
             <div class="contents-right">
-              <img src="tools.jpg" alt="peralatan" style="width: 100%;">
+              <img src="img/tools.jpg" alt="peralatan" style="width: 100%;">
             </div>
         </div>
     </div>
     <div class="features">
       <div class="wrapper">
         <div class="feature">
-          <i class="fa-solid fa-wrench fa-7x">
+         <a href="form.php" class="fa-solid fa-wrench fa-7x"></a>
             <center><h2 style="font-size: 20px;">Elektronik</h2></center>
           </i>
         </div>
         <div class="feature">
-          <i class="fa-solid fa-car fa-7x">
+        <a href="form.php" class="fa-solid fa-car fa-7x"></a>
             <center><h2 style="font-size: 20px;">Mobil</h2></center>
           </i>
         </div>
         <div class="feature">
-          <i class="fa-solid fa-motorcycle fa-7x">
+        <a href="form.php" class="fa-solid fa-motorcycle fa-7x"></a>
             <center><h2 style="font-size: 20px;">Motor</h2></center>
           </i>
         </div>
         <div class="feature">
-          <i class="fa-solid fa-hammer fa-7x">
+        <a href="form.php" class="fa-solid fa-hammer fa-7x"></a>
             <center><h2 style="font-size: 20px;">Rumah</h2></center>
           </i>
         </div>
@@ -66,10 +60,10 @@
     <div class="popup" id="popup">
       <div class="popup_content">
           <div class="popup_img">
-            <img src="electronic.jpg" alt="electronic">
-            <img src="car.jpg" alt="car">
-            <img src="motorcycle.jpg" alt="motorcycle">
-            <img src="house.jpg" alt="house">
+            <img src="img/electronic.jpg" alt="electronic">
+            <img src="img/car.jpg" alt="car">
+            <img src="img/motorcycle.jpg" alt="motorcycle">
+            <img src="img/house.jpg" alt="house">
             <a href="#" class="popup_close">&times;</a>
           </div>
           <div class="popup_header">
@@ -82,33 +76,7 @@
             </div>
             <center><a href="form.php" class="popup_btn">BOOK NOW</a></center>  
       </div>
-
     </div>
-    <footer class="footer">
-      <div class="container2">
-        <div class="row2">
-          <div class="footer-col">
-            <h1 style="color: #24262b; font-size: 60px; margin-left: 40px;">BONL</h1>
-            <h3 style="color: #24262b; margin-left: 40px;font-size: 15px;"> Bengkel Online</h3>
-          </div>
-          <div class="footer-col">
-            <h4><b>help</b> </h4>
-            <ul>
-              <li><a href="#"><b>FAQ</b></a></li>
-              <li><a href="#"><b>returns</b></a></li>
-              <li><a href="#"><b>payment options</b></a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4><b>follow us</b></h4>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.instagram.com/daninaswa/"><i class="fab fa-instagram"></i></a>
-              <a href="https://github.com/naswadani"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <i style="color:white;">@Bengkelno2022-Naswa Bryna Danikhansa</i>
 </body>
 </html>

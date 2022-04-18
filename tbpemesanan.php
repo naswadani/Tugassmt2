@@ -1,8 +1,9 @@
-<?php
-require 'koneksifrom.php';
-$submit= query("SELECT * FROM tbpemesanan");
+<?php 
+if (!isset($_POST["nama"])){
+	header("Location:form.php");
+	exit;
+} 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,29 +33,27 @@ $submit= query("SELECT * FROM tbpemesanan");
 	</style>
 </head>
 <body>
-	<h2>Daftar Login</h2>
+	<h2>Tabel Pemesanan</h2>
 	<table border="1" cellpadding="20" cellspacing="0">
 		<tr style="background-color: #FF6363;">
-			<th>no</th>
 			<th>nama</th>
 			<th>pesanan</th>
             <th>no telepon</th>
             <th>alamat</th>
+			<th>waktu</th>
+			<th>pembayaran</th>
 
 		</tr>
-		<?php $i=1;?>
-		<?php foreach($submit as $row):?>
-		<tr style="background-color:#DDDDDD;">
-			<td><?= $i; ?></td>
-			<td><?= $row["nama"];?></td>
-			<td><?= $row["pesanan"];?></td>
-            <td><?= $row["notelp"];?></td>
-            <td><?= $row["alamat"];?></td>
+		<tr style="background-color:white;"> 
+			<th><?php echo $_POST["nama"]; ?></th>
+			<th><?php echo $_POST["pesanan"]; ?></th>
+			<th><?php echo $_POST["notelp"]; ?></th>
+			<th><?php echo $_POST["alamat"]; ?></th>
+			<th><?php echo $_POST["waktu"]; ?></th>
+			<th><?php echo $_POST["pembayaran"]; ?></th>			
 		</tr>
-		<?php $i++; ?>
-		<?php endforeach; ?>
 	</table>
-	<button><a href="login.php">Kembali</a></button>
+	<button><a href="form.php">Kembali</a></button>
 
 </body>
 </html>

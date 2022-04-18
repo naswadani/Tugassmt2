@@ -1,5 +1,5 @@
 <?php
-$database = mysqli_connect("localhost","root","","submit");
+$database = mysqli_connect("localhost","root","","test");
 
 function query($query){
     global $database;

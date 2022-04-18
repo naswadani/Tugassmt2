@@ -6,7 +6,7 @@ if(isset($_POST["login"]) ){
       echo "
       <script>
         alert('data berhasil ditambahkan');
-        document.location.href = 'home.html';
+        document.location.href = 'home.php';
       </script>
       ";
     }else{
@@ -37,14 +37,8 @@ if(isset($_POST["login"]) ){
                <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Pemesanan</a></li>
+                    <li style="float:right;"><a href="tblogin.php">Database Login</a></li>
                </ul>
-               <div class="search-box">
-                   <input class="search-txt" type="search" name="" placeholder="Search" >
-               </div>
-               <a class="search-icon" href="#">
-                <i class="fas fa-search"></i>
-               </a>
-           </div>
        </div>
    </nav>
    <div class="login-box">
