@@ -150,7 +150,7 @@ nav ul li a:hover{
   display: inline-block;
   line-height: 1;
   transition: all;
-  color: beige;
+  color: black;
 }
 .popup_close:hover,
 .popup_close:active{

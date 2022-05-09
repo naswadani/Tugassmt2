@@ -1,0 +1,4 @@
+# NASWA BRYNA DANIKHANSA A11.2021.13262
+-Untuk file login.php & tblogin.php tersambung menggunakan database localhost, kemungkinan tidak bisa di jalankan di komputer lain (ini asumsi saya). Jadi untuk file index.php saya sambungkan ke Beranda WEB tugas saya, bukan ke menu login. 
+-Untuk file Form.php dihubungkan menggunakan method POST ke tbpemesanan.php
+-tbpemesanan.php tidak akan bisa dimasuki secara paksa jika belum mengisi data di form.php

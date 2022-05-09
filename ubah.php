@@ -1,18 +1,24 @@
 <?php
 require 'koneksi.php';
+//ambil data
+$id = $_GET["id"];
+//query data
+$data = query("SELECT * FROM tblogin WHERE id = $id")[0];
+
+
 if(isset($_POST["login"]) ){
     //cek data 
-    if(tambah($_POST)>0){
+    if(ubah($_POST)>0){
       echo "
       <script>
-        alert('data berhasil ditambahkan');
-        document.location.href = 'index.php';
+        alert('data berhasil diubah');
+        document.location.href = 'tblogin.php';
       </script>
       ";
     }else{
       echo "
       <script>
-        alert('data gagal ditambahkan');
+        alert('data gagal diubah');
       </script>
       ";
     }
@@ -27,7 +33,7 @@ if(isset($_POST["login"]) ){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylelog.css">
     <script src="https://kit.fontawesome.com/d2343b7158.js" crossorigin="anonymous"></script>
-    <title>Login</title>
+    <title>Update</title>
 </head>
 <body>
    <nav>
@@ -37,17 +43,19 @@ if(isset($_POST["login"]) ){
                <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Pemesanan</a></li>
+                    <li style="float:right;"><a href="tblogin.php">Database Login</a></li>
                </ul>
        </div>
    </nav>
    <div class="login-box">
-       <h1>Login Here</h1>
-       <form action="" method="post">
+       <h1>Update Here</h1>
+       <form method="post">
+           <input type="hidden" name="id" value="<?= $data["id"];?>">
         <table>
-            <tr><td>Username</td><td><input type="email" name="username" placeholder="username" id="username" required></td></tr>
-            <tr><td>Password</td><td><input type="password" name="password" placeholder="password" id="password" required></td></tr>
+            <tr><td>Username</td><td><input type="email" name="username" placeholder="username" id="username" required value="<?= $data["username"];?>"></td></tr>
+            <tr><td>Password</td><td><input type="password" name="password" placeholder="password" id="password" required value="<?= $data["password"];?>"></td></tr>
         </table>
-        <button type="submit" name="login" style="font-size: 25px">Login</button>
+        <button type="submit" name="login" style="font-size: 25px">Update</button>
     </form>
 </div>
    </div>

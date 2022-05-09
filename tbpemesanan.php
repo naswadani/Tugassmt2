@@ -9,7 +9,7 @@ if (!isset($_POST["nama"])){
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tabel login</title>
+	<title>Tabel Pemesanan</title>
 	<style>
 		h2{
 			color : #24262b;

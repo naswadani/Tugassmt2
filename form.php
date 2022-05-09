@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pemesanan.css">
     <script src="https://kit.fontawesome.com/d2343b7158.js" crossorigin="anonymous"></script>
-    <title>Login</title>
+    <title>Pemesanan</title>
 </head>
 <body>
    <nav>
@@ -23,7 +23,7 @@
    <div class="booking">
     <form action="tbpemesanan.php" method="post">
         <table>
-        <tr><td><label>Nama Pemesan</label></td><td><input type="text" name="nama" size="50" required></td></tr>
+        <tr><td><label>Nama Pemesan</label></td><td><input type="text" name="nama" size="50"  required></td></tr>
         <tr><td><label>Tipe Pesanan</label></td><td><input type="text" name="pesanan" size="50" required></td></tr>
         <tr><td><label>No Telepon</label></td><td><input type="number" name="notelp" size="50" required></td></tr>
         <tr><td><label>Alamat</label></td><td><input type="text" name="alamat" size="50" cols="20" required></td></tr>

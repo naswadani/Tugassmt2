@@ -71,8 +71,8 @@
             <h2>Please read these terms before booking</h2>
           </div>
             <div class="popup_text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minima nobis laudantium voluptates harum quidem cum aliquid eligendi vel ipsa, amet iure natus reprehenderit soluta fuga molestias mollitia excepturi illum.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptas sapiente hic repellat nobis placeat, quas est, exercitationem ullam ipsa dignissimos eum molestias omnis inventore maxime commodi quidem! Nesciunt, odit?</p>
+              <p>Bengkelno menyediakan pelayanan service Mobil, Motor, Barang Elektronik dan Rumah. Tenaga kerja yang kami miliki sudah berpengalaman, dan harga yang kami tawarkan sudah beserta jaminan 20 hari barang yang diservice (hanya berlaku jika Nota pembayaran masih ada).</p>
+              <p>Untuk Tagihan, akan diberikan setelah proses pengerjaan, besaran harga yang harus dibayar tergantung seberapa banyak yang harus di Service, dan kami akan mengambil tindakan hukum jika ada kecurangan dari pihak petugas kami ataupun pelanggan</p>
             </div>
             <center><a href="form.php" class="popup_btn">BOOK NOW</a></center>  
       </div>
