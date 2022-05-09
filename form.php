@@ -1,3 +1,24 @@
+<?php
+require 'koneksi2.php';
+if(isset($_POST["input"]) ){
+    //cek data 
+    if(input($_POST)>0){
+      echo "
+      <script>
+        alert('data berhasil ditambahkan');
+        document.location.href = 'index.php';
+      </script>
+      ";
+    }else{
+      echo "
+      <script>
+        alert('data gagal ditambahkan');
+      </script>
+      ";
+    }
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,18 +37,23 @@
                <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="#">Pemesanan</a></li>
-                    <li style="float:right;"><a href="tblogin.php">Database Login</a></li>
+                    <li style="float:right;"><a href="tbpemesanan.php">Database Pesanan</a></li>
                </ul>
        </div>
    </nav>
    <div class="booking">
-    <form action="tbpemesanan.php" method="post">
+    <form action="" method="post">
         <table>
-        <tr><td><label>Nama Pemesan</label></td><td><input type="text" name="nama" size="50"  required></td></tr>
-        <tr><td><label>Tipe Pesanan</label></td><td><input type="text" name="pesanan" size="50" required></td></tr>
+        <tr><td><label>Nama Pemesan</label></td><td><input type="text" name="nama_pemesan" size="50"  required></td></tr>
+
+        <tr><td><label>Tipe Pesanan</label></td><td><input type="text" name="tipe_pesanan" size="50" required></td></tr>
+
         <tr><td><label>No Telepon</label></td><td><input type="number" name="notelp" size="50" required></td></tr>
+
         <tr><td><label>Alamat</label></td><td><input type="text" name="alamat" size="50" cols="20" required></td></tr>
+
         <tr><td><label>Waktu Service</label></td><td><input type="datetime-local" name="waktu" size="50" required></td></tr>
+
         <tr><td>Pembayaran :</td><td>
             <select id="pembayaran" name="pembayaran">
                 <option>Pilih</optione>
@@ -35,7 +61,7 @@
                 <option value="Bayar Ditempat">Bayar Ditempat</optione>
             </select></td></tr>  
         </table>
-        <button type="submit" name="input" value="Pesan">Pesan</button>
+        <button type="submit" name="input">Pesan</button>
     </form>      
    </div>
 </body>

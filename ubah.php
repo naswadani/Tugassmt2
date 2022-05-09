@@ -22,7 +22,6 @@ if(isset($_POST["login"]) ){
       </script>
       ";
     }
-
 }
 ?>
 <!DOCTYPE html>
@@ -43,7 +42,7 @@ if(isset($_POST["login"]) ){
                <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Pemesanan</a></li>
-                    <li style="float:right;"><a href="tblogin.php">Database Login</a></li>
+                    <li style="float:right;"><a href="tbpemesanan.php">Database Pesanan</a></li>
                </ul>
        </div>
    </nav>
