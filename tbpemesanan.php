@@ -35,16 +35,21 @@ $submit= query("SELECT * FROM tbpemesanan");
 </head>
 <body>
 	<h2>Tabel Pemesanan</h2>
-	<table border="1" cellpadding="20" cellspacing="0">
+	<table border="1" cellpadding="10" cellspacing="0">
 		<tr style="background-color: #86C6F4;">
-			<th>no</th>
-			<th>nama</th>
-			<th>pesanan</th>
-            <th>no telepon</th>
-            <th>alamat</th>
-			<th>waktu</th>
-			<th>pembayaran</th>
-			<th>edit</th>
+			<th rowspan="2">no</th>
+			<th rowspan="2">Nama</th>
+			<th rowspan="2">Pesanan</th>
+            <th rowspan="2">No telepon</th>
+            <th colspan="3">Alamat</th>
+			<th rowspan="2">Waktu</th>
+			<th rowspan="2">Pembayaran</th>
+			<th rowspan="2">Edit</th>
+		</tr>
+		<tr style="background-color: #86C6F4;">
+			<th>alamat</th>
+			<th>kecamatan</th>
+			<th>kota</th>
 		</tr>
 		<?php $i=1;?>
 		<?php foreach($submit as $row):?>
@@ -54,6 +59,8 @@ $submit= query("SELECT * FROM tbpemesanan");
 			<td><?= $row["tipe_pesanan"];?></td>
 			<td><?= $row["notelp"];?></td>
 			<td><?= $row["alamat"];?></td>
+			<td><?= $row["kecamatan"];?></td>
+			<td><?= $row["kota"];?></td>
 			<td><?= $row["waktu"];?></td>
 			<td><?= $row["pembayaran"];?></td>
 			<td>

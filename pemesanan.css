@@ -40,7 +40,6 @@ nav ul li a{
     font-size: 18px;
     padding: 0px 16px 0px 16px;
     text-decoration: none;
-
 }
 nav ul li a:hover{
     color:gray;
@@ -49,19 +48,18 @@ nav ul li a:hover{
 .booking{
     padding: 1em;
     margin:3em auto;
-    width: 50%;
+    width: 70%;
     background:#86C6F4;
     box-shadow: 0 20px 40px rgba(0, 0, 0,2);
-    list-style: none;
     font-size: 20px;
-    line-height: 80px;
+    line-height: 60px;
 }
 .booking input{
   padding: 8px 10px;
   background-color: transparent;
   color: #24262b;
-  border: none;
-  border-bottom: 2px solid black;
+  border: 1;
+
 }
 button{
     background:#24262b;

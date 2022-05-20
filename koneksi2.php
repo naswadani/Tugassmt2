@@ -16,12 +16,14 @@ function input($data){
     $tipe_pesanan = htmlspecialchars($data["tipe_pesanan"]);
     $notelp = htmlspecialchars($data["notelp"]);
     $alamat = htmlspecialchars($data["alamat"]);
+    $kecamatan = htmlspecialchars($data["kecamatan"]);
+    $kota = htmlspecialchars($data["kota"]);
     $waktu = htmlspecialchars($data["waktu"]);
     $pembayaran = htmlspecialchars($data["pembayaran"]);
   
     $query = "INSERT INTO tbpemesanan
                 VALUES
-                ('','$nama_pemesan','$tipe_pesanan','$notelp','$alamat','$waktu','$pembayaran')";
+                ('','$nama_pemesan','$tipe_pesanan','$notelp','$alamat','$kecamatan','$kota','$waktu','$pembayaran')";
       mysqli_query($pemesanan,$query);
       return mysqli_affected_rows($pemesanan);
 }
@@ -37,6 +39,8 @@ function update($data){
     $tipe_pesanan = htmlspecialchars($data["tipe_pesanan"]);
     $notelp = htmlspecialchars($data["notelp"]);
     $alamat = htmlspecialchars($data["alamat"]);
+    $kecamatan = htmlspecialchars($data["kecamatan"]);
+    $kota = htmlspecialchars($data["kota"]);
     $waktu = htmlspecialchars($data["waktu"]);
     $pembayaran = htmlspecialchars($data["pembayaran"]);
 
@@ -45,6 +49,8 @@ function update($data){
                 tipe_pesanan = '$tipe_pesanan',
                 notelp = '$notelp',
                 alamat = '$alamat',
+                kecamatan = '$kecamatan',
+                kota = '$kota',
                 waktu = '$waktu',
                 pembayaran = '$pembayaran'
                 WHERE id = $id
